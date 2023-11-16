@@ -5,8 +5,8 @@
 //  Created by Sebas Muñoz on 08/11/23.
 //
 
-#ifndef Header_h
-#define Header_h
+#ifndef mesero_h
+#define mesero_h
 
 class Mesero{
 private:
