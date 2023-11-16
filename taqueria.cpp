@@ -17,8 +17,6 @@ int main(){
     bool eleccion=true, salsa_s_n,cilceb_s_n,lechceb_s_n,queso_s_n;
     int opcion,opcion_2,opcion_3,cuantos, pedir;
     std::string tipo_tacos,tipo_tortas;
-    Tacos orden_1(cuantos,tipo_tacos,salsa_s_n,cilceb_s_n);
-    Tortas orden_2(cuantos,tipo_tortas,lechceb_s_n,queso_s_n);
 
     //Creamos un objeto de la clase taco que simula un pedido de tortas que el usuario puede crear
 
@@ -34,6 +32,7 @@ int main(){
         Tacos orden_1(cuantos,tipo_tacos,true,false);
         
         if (pedir==1){
+            Tacos orden_1(cuantos,tipo_tacos,salsa_s_n,cilceb_s_n);
             
             std::cout<<" 1. Taco de bistec \n";
             std::cin>>opcion;
@@ -51,12 +50,12 @@ int main(){
                     
                     if (opcion_3==1){
                         cilceb_s_n=true;
-                        std::cout<<"Van a ser "<< orden_1.get_orden()<<" tacos de "<<orden_1.get_tipo_tacos()<<", "<<orden_1.get_salsa()<<", "<<" y "<<orden_1.get_cilantro_cebolla()<<std::endl;
+                        std::cout<<"Van a ser "<< orden_1.get_orden()<<orden_1.get_tipo_tacos()<<", "<<orden_1.get_salsa()<<", "<<" y "<<orden_1.get_cilantro_cebolla()<<std::endl;
                         std::cout<<"Su total sería: "<<orden_1.get_la_cuenta()<<std::endl;
                     }
                     else{
                         cilceb_s_n=false;
-                        std::cout<<"Van a ser "<< orden_1.get_orden()<<" tacos de "<<orden_1.get_tipo_tacos()<<", "<<orden_1.get_salsa()<<", "<<" y "<<orden_1.get_cilantro_cebolla()<<std::endl;
+                        std::cout<<"Van a ser "<< orden_1.get_orden()<<orden_1.get_tipo_tacos()<<", "<<orden_1.get_salsa()<<", "<<" y "<<orden_1.get_cilantro_cebolla()<<std::endl;
                         std::cout<<"Su total sería: "<<orden_1.get_la_cuenta()<<std::endl;
                     }
                     
@@ -68,12 +67,12 @@ int main(){
                 if (opcion_3==1){
                     if (opcion_3==1){
                         cilceb_s_n=true;
-                        std::cout<<"Van a ser "<< orden_1.get_orden()<<" tacos de "<<orden_1.get_tipo_tacos()<<", "<<orden_1.get_salsa()<<", "<<" y "<<orden_1.get_cilantro_cebolla()<<std::endl;
+                        std::cout<<"Van a ser "<< orden_1.get_orden()<<orden_1.get_tipo_tacos()<<", "<<orden_1.get_salsa()<<", "<<" y "<<orden_1.get_cilantro_cebolla()<<std::endl;
                         std::cout<<"Su total sería: "<<orden_1.get_la_cuenta()<<std::endl;
                     }
                     else{
                         cilceb_s_n=false;
-                        std::cout<<"Van a ser "<< orden_1.get_orden()<<" tacos de "<<orden_1.get_tipo_tacos()<<", "<<orden_1.get_salsa()<<", "<<" y "<<orden_1.get_cilantro_cebolla()<<std::endl;
+                        std::cout<<"Van a ser "<< orden_1.get_orden()<<orden_1.get_tipo_tacos()<<", "<<orden_1.get_salsa()<<", "<<" y "<<orden_1.get_cilantro_cebolla()<<std::endl;
                         std::cout<<"Su total sería: "<<orden_1.get_la_cuenta()<<std::endl;
                     }
                         
@@ -87,7 +86,8 @@ int main(){
             
         }
         else if (pedir==2){
-            std::cout<<" 1. Carnitas ";
+            Tortas orden_2(cuantos,tipo_tortas,lechceb_s_n,queso_s_n);
+            std::cout<<" 1. Carnitas \n";
             std::cin>>opcion;
             
             if (opcion==1){
@@ -103,12 +103,12 @@ int main(){
                     
                     if (opcion_3==1){
                         queso_s_n=true;
-                        std::cout<<"Van a ser "<< orden_2.get_orden()<<" tacos de "<<orden_2.get_tipo_carne()<<", "<<orden_2.get_lechuga_cebolla()<<", "<<" y "<<orden_2.get_queso()<<std::endl;
+                        std::cout<<"Van a ser "<< orden_2.get_orden()<<orden_2.get_tipo_carne()<<", "<<orden_2.get_lechuga_cebolla()<<", "<<" y "<<orden_2.get_queso()<<std::endl;
                         std::cout<<"Su total sería: "<<orden_2.get_la_cuenta()<<std::endl;
                     }
                     else{
                         queso_s_n=false;
-                        std::cout<<"Van a ser "<< orden_2.get_orden()<<" tacos de "<<orden_2.get_tipo_carne()<<", "<<orden_2.get_lechuga_cebolla()<<", "<<" y "<<orden_2.get_queso()<<std::endl;
+                        std::cout<<"Van a ser "<< orden_2.get_orden()<<orden_2.get_tipo_carne()<<", "<<orden_2.get_lechuga_cebolla()<<", "<<" y "<<orden_2.get_queso()<<std::endl;
                         std::cout<<"Su total sería: "<<orden_2.get_la_cuenta()<<std::endl;
                     }
                     
@@ -121,13 +121,13 @@ int main(){
                     
                     if (opcion_3==1){
                         queso_s_n=true;
-                        std::cout<<"Van a ser "<< orden_2.get_orden()<<" tacos de "<<orden_2.get_tipo_carne()<<", "<<orden_2.get_lechuga_cebolla()<<", "<<" y "<<orden_2.get_queso()<<std::endl;
+                        std::cout<<"Van a ser "<< orden_2.get_orden()<<orden_2.get_tipo_carne()<<", "<<orden_2.get_lechuga_cebolla()<<", "<<" y "<<orden_2.get_queso()<<std::endl;
                         std::cout<<"Su total sería: "<<orden_2.get_la_cuenta()<<std::endl;
                     }
                     
                     else{
                         queso_s_n=false;
-                        std::cout<<"Van a ser "<< orden_2.get_orden()<<" tacos de "<<orden_2.get_tipo_carne()<<", "<<orden_2.get_lechuga_cebolla()<<", "<<" y "<<orden_2.get_queso()<<std::endl;
+                        std::cout<<"Van a ser "<< orden_2.get_orden()<<orden_2.get_tipo_carne()<<", "<<orden_2.get_lechuga_cebolla()<<", "<<" y "<<orden_2.get_queso()<<std::endl;
                         std::cout<<"Su total sería: "<<orden_2.get_la_cuenta()<<std::endl;
                     }
             }
@@ -161,4 +161,6 @@ int main(){
     std::cout<<"Su salario del día sería: "<<mesero_1.get_salario()<<std::endl;
     return 0;
 }
+    
+    
     
