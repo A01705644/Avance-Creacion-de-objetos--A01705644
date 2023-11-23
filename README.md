@@ -30,3 +30,4 @@ Para este programa se relizaron las siguientes correcciones:
 2. Se creó un menú donde el usuario podía escoger el tipo de tacos que quiere y te regresaba los datos de la orden de taco y el total de la cuenta.
 
 3. El código original era un poco simple y, gracias a esto, hacía más difícil la creación de herencias y composiciones porque se sentía demasiado forzado y con muy poca funcionalidad. Es por eso que se cambió el trabajo del proyecto a un Programa que te ayuda a crear naves Espaciales en Star Wars ( se borraron las Clases mesero,tacos,taquería,tortas y el UML original).
+4. 4. Se hizo un nuevo código en el cual ya se agregan herencias y un main funcional que implica el uso de herencias.
