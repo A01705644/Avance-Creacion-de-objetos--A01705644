@@ -14,15 +14,13 @@
 class Nave{
     
 private:
-    std::string nombreescuadron,faccion;
+    std::string nombreescuadron;
     int numerotripulantes;
-    float vida;
     
 public:
     Nave(){};
-    Nave(std::string squad,std::string facc,int trip){
+    Nave(std::string squad,int trip){
         nombreescuadron=squad;
-        faccion=facc;
         numerotripulantes=trip;
     };
     std::string get_escuadron();
@@ -37,10 +35,6 @@ std::string Nave:: get_escuadron(){
     return nombreescuadron;
 }
 
-std::string Nave:: get_faccion(){
-    return faccion;
-}
-
 int Nave:: get_numerotripulantes(){
     return numerotripulantes;
 }
@@ -52,9 +46,10 @@ private:
     std::string nombrepiloto;
     std::string nombrenave="TIE-Fighter";
     float vida=140.00;
-    int canones=4;
+    int canones=2;
+    std::string faccion="Imperial";
 public:
-    Imperial(std::string squad,std::string facc,int trip,std::string name):Nave(squad, facc ,trip){
+    Imperial(std::string squad,int trip,std::string name):Nave(squad,trip){
         
         nombrepiloto=name;
     };
@@ -62,6 +57,7 @@ public:
     std::string get_nombrenave();
     float get_vida();
     int get_canones();
+    std::string get_faccion();
 };
 
 std::string Imperial::get_nombrepiloto(){
@@ -79,6 +75,10 @@ int Imperial::get_canones(){
     return canones;
 }
 
+std::string Imperial:: get_faccion(){
+    return faccion;
+}
+
 
 class Rebelde:public Nave{
 private:
@@ -87,9 +87,10 @@ private:
     std::string nombrepiloto;
     float vida=120.00;
     int canones=4;
+    std::string faccion="Rebelde";
     
 public:
-    Rebelde(std::string squad,std::string facc,int trip,std::string name):Nave(squad,facc,trip){
+    Rebelde(std::string squad,int trip,std::string name):Nave(squad,trip){
         
         nombrepiloto=name;
         //modelo
@@ -99,6 +100,7 @@ public:
     std::string get_nombrenave();
     float get_vida();
     int get_canones();
+    std::string get_faccion();
 };
 
 std::string Rebelde::get_nombrepiloto(){
@@ -117,20 +119,25 @@ int Rebelde::get_canones(){
     return canones;
 }
 
+std::string Rebelde:: get_faccion(){
+    return faccion;
+}
+
     
-    //Rebelde(std::string squad,std::string facc,int canones,int trip,float health,std::string //name, std::string anddroide):Nave(squad,facc,canones,trip,health){
+    //Rebelde(std::string squad,std::string facc,int canones,int trip,float health,std::string //name, std::string anddroide):Nave(squad,facc,trip){
         //CUANDO TENGAS LA COMPOSICION DE ANDROIDE PONES ESTE CONSTRUCTOR
         //nombrepiloto=name;
         //modelo
     //};
 
-
 //class Androide{
 //private:
     //std::string nombreandroide;
 //public:
-    //Androide(){};
+    //Androide():nombreandroide=" "{};
+    //Androide;
 //};
 
 
 #endif /* nave_h */
+
