@@ -5,7 +5,7 @@
 La creación de naves tanto Imperiales como rebeldes en el universo de Star Wars hechas de tal manera en que tengan vida propia con sus propios pilotos y otros atributos.
 
 
-##**Funcionalidad:**
+## **Funcionalidad:**
 
 EL programa lo que hace es permitirle al usuario crear una nave de Star Wars, ya sea Rebelde o del Imperio, con sus diferentes características y particularidades. Para empezar el usuario puede ponerle nombre a su piloto, el nombre del escuadrón al que quiere que pertenezca la nave y el número de tripulantes. Una vez que escoge si quiere que su nave pertenezca al Imperio o a la Rebelión las diferentes características individuales de la TIE Fighter (Imperio) y la X-Wing (Rebelión) se verán reflejadas como lo será el nombre de la nave que usará (X-Wing o TIE Fighter), el numero de cañones que tienen las naves y la vida. Además los Rebeldes tendrán la oportunidad de crear su propio droide astromecanico tal como Luke y Anakin tuvieron a R2D2.
 
@@ -13,7 +13,7 @@ Cabe aclarar que la vida se basó en que, por ser Rebeldes, los materiales de co
 
 Consta de un menu con las opciones iniciales.
 
-##**Consideraciones:**
+## **Consideraciones:**
 
 El programa incluye su propio Diagrama de Clases para que sea más fácil para el usuario poder navegar entre las clases.
 
@@ -21,9 +21,9 @@ compilar con: "g++ -o main main.cpp"
 
 correr en mac: "main.exe"
 
-##**Correcciones:**
+## **Correcciones:**
 
-#**Para este programa se relizaron las siguientes correcciones:**
+# **Para este programa se relizaron las siguientes correcciones:**
 
 **1.** El programa al principio se trataba sobre una taquería por lo que los primeros cambios fueron la creación de las tres clases y la corrección del nombre de dos de elllas ya que tenían un espacio el cual hacía que no compilaran. Esta primera versión venía con casos de prueba funcionales. 
 
