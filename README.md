@@ -21,9 +21,10 @@ compilar con: "g++ -o main main.cpp"
 
 correr en mac: "main.exe"
 
+
 ## **Correcciones:**
 
-# **Para este programa se relizaron las siguientes correcciones:**
+**Para este programa se relizaron las siguientes correcciones:**
 
 **1.** El programa al principio se trataba sobre una taquería por lo que los primeros cambios fueron la creación de las tres clases y la corrección del nombre de dos de elllas ya que tenían un espacio el cual hacía que no compilaran. Esta primera versión venía con casos de prueba funcionales. 
 
