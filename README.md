@@ -1,6 +1,6 @@
 ### **Proyecto--A01705644**
 
-##Contexto:
+## **Contexto:**
 
 La creación de naves tanto Imperiales como rebeldes en el universo de Star Wars hechas de tal manera en que tengan vida propia con sus propios pilotos y otros atributos.
 
@@ -30,9 +30,20 @@ correr en mac: "main.exe"
 
 **2.** Se creó un menú donde el usuario podía escoger el tipo de tacos que quiere y te regresaba los datos de la orden de taco y el total de la cuenta.
 
-**3.** El código original era un poco simple y, gracias a esto, hacía más difícil la creación de herencias y composiciones porque se sentía demasiado forzado y con muy poca funcionalidad. Es por eso que se cambió el trabajo del proyecto a un Programa que te ayuda a crear naves Espaciales en Star Wars ( se borraron las Clases mesero,tacos,taquería,tortas y el UML original).
-**4.** Se hizo un nuevo código en el cual ya se agregan herencias y un main funcional que implica el uso de herencias. La nueva clase es nave.h y el nuevo main es main.cpp
+**NO voy a poner las subcompetencias de las correcciones del programa anterior porque lo cambié todo así que las correcciones que sí cuentan empiezan aquí:** 
 
-**5.** Se cambió el UML a una versión actualizada y sin errores en los íconos de composición y agregación.
+**3.** El código original era un poco simple y, gracias a esto, hacía más difícil la creación de herencias y composiciones porque se sentía demasiado forzado y con muy poca funcionalidad. Es por eso que se cambió el trabajo del proyecto a un Programa que te ayuda a crear naves Espaciales en Star Wars ( se borraron las Clases mesero,tacos,taquería,tortas y el UML original). 
+** Subcompetencias: Diseño clases sencillas completas (con todos los atributos y métodos requeridos).**
 
-**6.** El main tiene interacción con el usuario. Se corrigieron errores en nave.h del tipo de sintáxis y buscando hacer el código lo más pequeño y funcional posible.
+
+**4.** Se hizo un nuevo código en el cual ya se agregan herencias y un main funcional que implica el uso de herencias. La nueva clase es nave.h y el nuevo main es main.cpp .
+** Subcometencias: Implemento las clases en c++ siguiendo el diseño del diagrama de clases en UML, Implemento herencia de manera correcta y util.**
+
+
+**5.** Se cambió el UML a una versión actualizada y sin errores en los íconos de composición y agregación. 
+** Subcompetencias: Utilizo el concepto de composición (o agreagación) en el diagrama de clases y Implemento las clases en c++ siguiendo el diseño del diagrama de clases en UML.**
+.
+
+
+**6.** El main tiene interacción con el usuario. Se corrigieron errores en nave.h del tipo de sintáxis y buscando hacer el código lo más pequeño y funcional posible. 
+** Subcometencias: Implemento herencia de manera correcta y util.**
